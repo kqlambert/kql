@@ -1,0 +1,10 @@
+{
+  "name": "example-project",
+  "version": "0.1.0",
+  "description": "gruntjs task runner",
+  "main": "gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1"
+  }
+}
