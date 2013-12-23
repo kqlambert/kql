@@ -32,10 +32,10 @@ function ajx($method, $url, $data, $async, $type, $cache, $result) {
 		dataType: $type,
 		cahce: $cache,
 		beforeSend: function () {
-			$('.spinner-wrapper').fadeIn();
+			console.log('start');
 		},
 		complete: function () {
-			$('.spinner-wrapper').fadeOut();
+			console.log('end');
 		},
 		success: function (re) {
 			$result(re);
