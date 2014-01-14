@@ -3,10 +3,10 @@ Variables
 ------------------------------- */
 $font-stack:'Open Sans', 'sans-serif';
 $trans3:all .3s;
+$radius:3px;
 /* colors */
 $red-orange:#da3610;
 $focus-blue:#557fc9;
-$white:#fff;
 
 /* -------------------------------
 Fonts
@@ -44,7 +44,7 @@ a{
 html,body{
 	height:100%;
 	color:#444;
-	background:$white;
+	background:#fff;
 	font-family:$font-stack;
 }
 textarea,input,select{
@@ -68,6 +68,14 @@ textarea,input,select{
 }
 .center{
 	text-align:center;
+}
+.vcenter{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+.big{
+	font-size:150%;
 }
 .small{
 	font-size:80%;
@@ -95,7 +103,7 @@ input[type=button],input[type=submit]{
 	line-height:normal;
 	padding:.5em 2em;
 	background:$red-orange;
-	color:$white;
+	color:#fff;
 	border:none;
 	text-align:center;
 	width:100%;
