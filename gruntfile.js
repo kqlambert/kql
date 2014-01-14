@@ -35,10 +35,6 @@ module.exports = function (grunt) {
 				}]
 			}
 		},
-		sitemap: {
-			dist: {
-			}
-		},
 		sass: {
 			dist: {
 				options: {
@@ -92,7 +88,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-sitemap');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
