@@ -1,17 +1,15 @@
 /* -------------------------------
 Variables
 ------------------------------- */
-$font-stack:'Open Sans', 'sans-serif';
-$trans3:all .3s;
-$radius:3px;
 /* colors */
-$red-orange:#da3610;
-$focus-blue:#557fc9;
+$orange:#da3610;
+$blue:#557fc9;
 
 /* -------------------------------
 Fonts
 ------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+$font-stack:'Open Sans', 'sans-serif';
 
 /* -------------------------------
 General Styles
@@ -38,7 +36,7 @@ img{
 	max-width:100%;
 }
 a{
-	color:$red-orange;
+	color:$orange;
 	text-decoration:none;
 }
 html,body{
@@ -94,24 +92,23 @@ textarea,input:not([type=button]):not([type=submit]):not([type=radio]):not([type
 	border:1px solid rgba(0,0,0,.3);
 	padding:.5em;
 	width:100%;
-}
-textarea:focus,input:not([type=button]):not([type=submit]):not([type=radio]):not([type=checkbox]):focus{
-	border:1px solid $focus-blue;
+	&:focus{
+		border:1px solid $blue;
+	}
 }
 input[type=button],input[type=submit]{
-	cursor:pointer;
+	border:1px solid $orange;
+	background:$orange;
 	line-height:normal;
-	padding:.5em 2em;
-	background:$red-orange;
-	color:#fff;
-	border:none;
 	text-align:center;
+	padding:.5em 2em;
+	cursor:pointer;
 	width:100%;
-	transition:$trans3;
-}
-input[type=button]:focus,input[type=submit]:focus{
-	background:$focus-blue;
-	transition:$trans3;
+	color:#fff;
+	&:focus{
+		background:$blue;
+		border-color:$blue;
+	}
 }
 
 /* -------------------------------
@@ -128,41 +125,43 @@ Layout
 	margin-bottom:-3em;
 	position:relative;
 }
+$footer-height:3em;
 .wrap:after{
 	content:" ";
-	height:3em;
+	height:$footer-height;
 	display:block;
 }
 /* Header ----------- */
 header{
-	min-height:5em;
+	padding:1em 0;
 }
-/* Nav ----------- */
+/* nav */
 nav{
 
-}
-nav{
-	li{
-		float:left;
-	}
 }
 /* Main ----------- */
 main{
-
+	padding:2em 0;
 }
 /* Footer ----------- */
 footer{
-	height:3em;
+	height:$footer-height;
 	padding:1em 0;
 }
 
 /* -------------------------------
 Media Queries
 ------------------------------- */
+// small tablet big phone
+@media only screen and (min-width:40em){
+
+}
+// tablet
 @media only screen and (min-width:48em){
 
 }
-@media only screen and (min-width:60em){
+// desktop
+@media only screen and (min-width:64em){
 	.wrapper{
 		width:60em;
 	}
