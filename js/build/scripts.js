@@ -6,7 +6,7 @@
 /*global window*/
 /*global document*/
 /*global console*/
-/*global escape*/
+/*global encodeURI*/
 /*node browser: true*/
 var $body = $('body');
 // simplify ajax calls
