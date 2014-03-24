@@ -58,9 +58,6 @@ td,th{
 svg:not(:root){
 	overflow:hidden;
 }
-figure{
-	margin:1em 40px;
-}
 a{
 	background:0 0;
 	color:$orange;
@@ -69,25 +66,8 @@ a{
 		outline:0;
 	}
 }
-abbr[title]{
-	border-bottom:1px dotted;
-}
 b,strong{
 	font-weight:700;
-}
-dfn{
-	font-style:italic;
-}
-mark{
-	background:#ff0;
-	color:#000;
-}
-pre{
-	overflow:auto;
-}
-code,kbd,pre,samp{
-	font-family:monospace,monospace;
-	font-size:1em;
 }
 html,body{
 	height:100%;
@@ -125,18 +105,6 @@ textarea,input,select{
 }
 small{
 	font-size:80%;
-}
-sub,sup{
-	font-size:75%;
-	line-height:0;
-	position:relative;
-	vertical-align:baseline;
-}
-sup{
-	top:-.5em
-}
-sub{
-	bottom:-.25em
 }
 .pointer{
 	cursor:pointer;
@@ -208,12 +176,12 @@ Layout
 	margin:0 auto;
 	width:90%;
 }
+$footer-height:3em;
 .wrap{
 	min-height:100%;
-	margin-bottom:-3em;
+	margin-bottom:-($footer-height);
 	position:relative;
 }
-$footer-height:3em;
 .wrap:after{
 	content:" ";
 	height:$footer-height;
