@@ -1,16 +1,10 @@
-/* ------------------------------------------------
-// GLOBALS
------------------------------------------------- */
-
 /*global module*/
 /*node browser: true*/
-
 module.exports = function (grunt) {
 	'use strict';
 	var $jsFiles = [
-		'js/build/*.js' // All Javascript files in the js folder
+		'js/build/*.js'
 	];
-	// 1. All configuration goes here
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		concat: {
@@ -63,6 +57,9 @@ module.exports = function (grunt) {
 				}
 			}
 		},
+		spell: {
+			files: ['index.html', 'index.php']
+		},
 		watch: {
 			options: {
 				livereload: true
@@ -84,24 +81,14 @@ module.exports = function (grunt) {
 		}
 	});
 
-	// 2. Where we tell Grunt we plan to use this plug-in.
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-spell');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	// 3. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin', 'spell', 'watch']);
 };
-
-// -------------------------------------
-// INSTALLING GRUNT ON A PROJECT
-// -------------------------------------
-// 1. save this file and package.json to root of project
-// 2. from command line navigate to project directory
-//    a. npm install
-//    b. npm install -g grunt-cli
-//    c. npm install grunt-contrib-concat --save-dev // as well as all the other plug-ins needed
