@@ -8,7 +8,7 @@ $blue:#557fc9;
 /* -------------------------------
 Fonts
 ------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 $font-stack:'Open Sans', 'sans-serif';
 
 /* -------------------------------
@@ -123,10 +123,10 @@ button,select{
 	text-transform:none;
 }
 button[disabled],html input[disabled]{
-	cursor:default
+	cursor:default;
 }
 button::-moz-focus-inner,input::-moz-focus-inner{
-	border:0;padding:0
+	border:0;padding:0;
 }
 input{
 	line-height:normal;
@@ -144,8 +144,8 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 	-webkit-appearance:none;
 }
 textarea,input:not([type=button]):not([type=submit]):not([type=radio]):not([type=checkbox]){
-	border:1px solid rgba(0,0,0,.3);
-	padding:.5em;
+	border:1px solid rgba(0,0,0,0.3);
+	padding:0.5em;
 	width:100%;
 	&:focus{
 		border:1px solid $blue;
@@ -157,7 +157,7 @@ input[type=button],input[type=submit]{
 	background:$orange;
 	line-height:normal;
 	text-align:center;
-	padding:.5em 2em;
+	padding:0.5em 2em;
 	cursor:pointer;
 	width:100%;
 	color:#fff;
@@ -188,11 +188,11 @@ $footer-height:3em;
 	display:block;
 }
 /* Header ----------- */
-header{
+header[role="banner"]{
 	padding:1em 0;
 }
 /* nav */
-nav{
+nav[role="navigation"]{
 
 }
 /* Main ----------- */
@@ -200,7 +200,7 @@ main{
 	padding:2em 0;
 }
 /* Footer ----------- */
-footer{
+footer[role="contentinfo"]{
 	height:$footer-height;
 	padding:1em 0;
 }
