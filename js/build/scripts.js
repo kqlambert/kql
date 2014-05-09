@@ -1,8 +1,7 @@
 /* ------------------------------------------------
-// GLOBALS
+// GENERAL
 ------------------------------------------------ */
 /*global $*/
-/*global console*/
-/*global encodeURI*/
 /*node browser: true*/
+'use strict';
 var b = $('body');
