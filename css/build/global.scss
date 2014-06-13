@@ -147,8 +147,10 @@ textarea,input:not([type=button]):not([type=submit]):not([type=radio]):not([type
 	border:1px solid rgba(0,0,0,0.3);
 	padding:0.5em;
 	width:100%;
+	transition: border-color 0.3s;
 	&:focus{
-		border:1px solid $blue;
+		transition: border-color 0.3s;
+		border-color:$blue;
 	}
 }
 input[type=button],input[type=submit]{
@@ -161,9 +163,11 @@ input[type=button],input[type=submit]{
 	cursor:pointer;
 	width:100%;
 	color:#fff;
+	transition: border-color 0.3s, background 0.3s;
 	&:focus{
 		background:$blue;
 		border-color:$blue;
+		transition: border-color 0.3s, background 0.3s;
 	}
 }
 
