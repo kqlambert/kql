@@ -7,7 +7,7 @@
 'use strict';
 var b = $('body');
 // ensure no horizontal scrolling
-var docWidth = document.documentElement.offsetWidth;
+/*var docWidth = document.documentElement.offsetWidth;
 [].forEach.call(
 	document.querySelectorAll('*'),
 	function(el) {
@@ -15,4 +15,4 @@ var docWidth = document.documentElement.offsetWidth;
 			console.log(el);
 		}
 	}
-);
+);*/
