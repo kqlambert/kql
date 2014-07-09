@@ -1,4 +1,4 @@
-boilerplate
+My Boilerplate
 ===========
 
-Starting place for future projects
+My starting place for creating new projects
