@@ -216,6 +216,15 @@ nav[role="navigation"]{
 /* Main ----------- */
 main[role="main"]{
 	padding:2em 0;
+	h1,h2,h3{
+		color:#222;
+		margin-bottom:0.5em;
+	}
+	p{
+		line-height:1.7;
+		font-size:1.2em;
+		margin-bottom:1em;
+	}
 }
 /* Footer ----------- */
 footer[role="contentinfo"]{
