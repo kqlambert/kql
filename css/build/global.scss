@@ -24,13 +24,14 @@ $font-stack:'Source Sans Pro', 'sans-serif';
 /* -------------------------------
 General Styles
 ------------------------------- */
-*,*:after,*:before{
-	box-sizing:border-box;
-}
 html{
+	box-sizing: border-box;
 	font-family:sans-serif;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
+}
+*,*:after,*:before{
+	box-sizing:inherit;
 }
 html,body,div,span,a,p,h1,h2,h3,form,nav,li,ul{
 	margin:0;
