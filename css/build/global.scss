@@ -5,9 +5,9 @@ Variables
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
 // alert colors (yellow to warn, red for an error, green for validation)
-$warn1:#f8f4d5; // background = 1
-$warn2:#ece8c6; // border = 2
-$warn3:#936f29; // font = 3
+$warn1:#f8f4d5; // background
+$warn2:#ece8c6; // border
+$warn3:#936f29; // font
 $err1:#ebc7c4;
 $err2:#ddb0ae;
 $err3:#b22e28;
@@ -194,7 +194,7 @@ Layout
 	margin:0 auto;
 	width:90%;
 }
-$footer-height:3.5em;
+$footer-height:3.25em;
 .wrap{
 	min-height:100%;
 	margin-bottom:-($footer-height);
@@ -243,5 +243,33 @@ Media Queries
 @media only screen and (min-width:64em){
 	.wrapper{
 		width:60em;
+	}
+}
+// print
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr,img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	p,h2,h3 {
+		orphans:3;
+		widows:3;
+	}
+	h2,h3{
+		page-break-after: avoid;
 	}
 }
