@@ -25,8 +25,7 @@ $font-stack:'Source Sans Pro', 'sans-serif';
 General Styles
 ------------------------------- */
 html{
-	box-sizing: border-box;
-	font-family:sans-serif;
+	box-sizing:border-box;
 	-webkit-text-size-adjust:100%;
 	-ms-text-size-adjust:100%;
 }
@@ -161,9 +160,9 @@ textarea,input:not([type=button]):not([type=submit]):not([type=radio]):not([type
 	border:1px solid rgba(0,0,0,0.3);
 	padding:0.5em;
 	width:100%;
-	transition: border-color 0.3s;
+	transition:border-color 0.3s;
 	&:focus{
-		transition: border-color 0.3s;
+		transition:border-color 0.3s;
 		border-color:$blue;
 	}
 }
@@ -207,15 +206,12 @@ $footer-height:3.25em;
 }
 /* Header ----------- */
 header[role="banner"]{
-	padding:1em 0;
 }
 /* nav */
 nav[role="navigation"]{
-
 }
 /* Main ----------- */
 main[role="main"]{
-	padding:2em 0;
 	h1,h2,h3{
 		color:#222;
 		margin-bottom:0.5em;
@@ -229,7 +225,6 @@ main[role="main"]{
 /* Footer ----------- */
 footer[role="contentinfo"]{
 	height:$footer-height;
-	padding:1em 0;
 }
 
 /* -------------------------------
@@ -247,6 +242,7 @@ Media Queries
 }
 // print
 @media print {
+	// fix common problems with printing
 	* {
 		background: transparent !important;
 		color: #000 !important;
