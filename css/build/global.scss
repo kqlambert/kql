@@ -206,6 +206,7 @@ $footer-height:3.25em;
 }
 /* Header ----------- */
 header[role="banner"]{
+	padding:1em 0;
 }
 /* nav */
 nav[role="navigation"]{
@@ -225,6 +226,7 @@ main[role="main"]{
 /* Footer ----------- */
 footer[role="contentinfo"]{
 	height:$footer-height;
+	padding:1em 0;
 }
 
 /* -------------------------------
@@ -249,9 +251,6 @@ Media Queries
 		box-shadow: none !important;
 		text-shadow: none !important;
 	}
-	a[href]:after {
-		content: " (" attr(href) ")";
-	}
 	thead {
 		display: table-header-group;
 	}
@@ -267,5 +266,8 @@ Media Queries
 	}
 	h2,h3{
 		page-break-after: avoid;
+	}
+	.dontprint{
+		display:none;
 	}
 }
