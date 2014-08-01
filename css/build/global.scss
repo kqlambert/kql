@@ -212,6 +212,37 @@ footer[role="contentinfo"]{
 	padding:1em 0;
 }
 
+/* Preload animations ---------- */
+.load{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background:#fff;
+	z-index:10;
+	.spinner {
+		width: 60px;
+		height: 60px;
+		background-color: #333;
+		margin: 0 auto;
+		top:40%;
+		position:relative;
+		animation: rotateplane 1.2s infinite ease-in-out;
+	}
+}
+@keyframes rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	} 50% {
+		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	} 100% {
+		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+}
+
 /* -------------------------------
 Media Queries
 ------------------------------- */
