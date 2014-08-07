@@ -171,21 +171,25 @@ input[type=button],input[type=submit]{
 Layout
 ------------------------------- */
 /* Wrappers ----------- */
-.wrapper{
-	position:relative;
-	margin:0 auto;
-	width:90%;
-}
 $footer-height:3.25em;
 .wrap{
 	min-height:100%;
 	margin-bottom:-($footer-height);
 	position:relative;
+	&.preload{
+		transition:none !important;
+		animation:none !important;
+	}
+	&:after{
+		content:" ";
+		height:$footer-height;
+		display:block;
+	}
 }
-.wrap:after{
-	content:" ";
-	height:$footer-height;
-	display:block;
+.wrapper{
+	position:relative;
+	margin:0 auto;
+	width:90%;
 }
 /* Header ----------- */
 header[role="banner"]{
