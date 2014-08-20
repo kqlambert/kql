@@ -42,7 +42,10 @@ table{
 	width:100%;
 }
 td,th{padding:0;}
-svg:not(:root){overflow:hidden;}
+svg:not(:root){
+	overflow:hidden;
+	stroke:#000;
+}
 a{
 	background:0 0;
 	color:$orange;
@@ -197,11 +200,11 @@ footer[role="contentinfo"]{
 /* Animations ----------- */
 @keyframes rotateplane {
 	0% {
-		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		transform:perspective(120px) rotateX(0deg) rotateY(0deg);
 	} 50% {
-		transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
 	} 100% {
-		transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	}
 }
 
