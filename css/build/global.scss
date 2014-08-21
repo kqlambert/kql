@@ -1,19 +1,46 @@
-/* -------------------------------
-Variables
-------------------------------- */
-/* colors */
+/**
+* CONTENTS
+*
+* SETTINGS
+* Variables............Globally-available variables and config.
+* Fonts-...............Define fonts.
+*
+* GENERIC
+* Normalize.css........A level playing field.
+*
+* Form
+* Form Elements........Form element styles and resets.
+*
+* OBJECTS
+* Wrappers.............Wrapping and constraining elements.
+*
+* COMPONENTS
+* Page-head............The main page header.
+* Page-Main............The main page body.
+* Page-foot............The main page footer.
+*
+* TRUMPS
+* Animations...........Keyframe animations.
+* Media Queries........Media queries for responisve page layout.
+*
+**/
+
+/* ------------------------------- *\
+	#Variables
+\* ------------------------------- */
+// colors
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
 
-/* -------------------------------
-Fonts
-------------------------------- */
+/* ------------------------------- *\
+	#Fonts
+\* ------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 $font-stack:'Source Sans Pro', 'sans-serif';
 
-/* -------------------------------
-General Styles
-------------------------------- */
+/* ------------------------------- *\
+	#Generic/ CSS Reset/ Normalize
+\* ------------------------------- */
 html{
 	box-sizing:border-box;
 	-webkit-text-size-adjust:100%;
@@ -86,9 +113,9 @@ small{font-size:80%;}
 .pointer{cursor:pointer;}
 [hidden],template{display:none;}
 
-/* -------------------------------
-Forms
-------------------------------- */
+/* ------------------------------- *\
+	#Form Elements
+\* ------------------------------- */
 button{overflow:visible;}
 button,select{text-transform:none;}
 button[disabled],html input[disabled]{cursor:default;}
@@ -129,9 +156,9 @@ input[type=button],input[type=submit]{
 	}
 }
 
-/* -------------------------------
-Layout
-------------------------------- */
+/* ------------------------------- *\
+	#Objects
+\* ------------------------------- */
 /* Wrappers ----------- */
 $footer-height:3.25em;
 .wrap{
@@ -153,14 +180,17 @@ $footer-height:3.25em;
 	margin:0 auto;
 	width:90%;
 }
-/* Header ----------- */
+/* ------------------------------- *\
+	#Components
+\* ------------------------------- */
+/* Page-Header ----------- */
 header[role="banner"]{
 	padding:1em 0;
 }
-/* nav */
+/* Page-Nav ---------- */
 nav[role="navigation"]{
 }
-/* Main ----------- */
+/* Page-Main ----------- */
 main[role="main"]{
 	h1,h2,h3{
 		color:#222;
@@ -172,7 +202,7 @@ section p{
 	font-size:1.2em;
 	margin-bottom:1em;
 }
-/* Footer ----------- */
+/* Page-Footer ----------- */
 footer[role="contentinfo"]{
 	height:$footer-height;
 	padding:1em 0;
@@ -197,7 +227,9 @@ footer[role="contentinfo"]{
 		animation: rotateplane 1.2s infinite ease-in-out;
 	}
 }
-/* Animations ----------- */
+/* ------------------------------- *\
+	#Animations
+\* ------------------------------- */
 @keyframes rotateplane {
 	0% {
 		transform:perspective(120px) rotateX(0deg) rotateY(0deg);
@@ -208,9 +240,9 @@ footer[role="contentinfo"]{
 	}
 }
 
-/* -------------------------------
-Media Queries
-------------------------------- */
+/* ------------------------------- *\
+	#Media Queries
+\* ------------------------------- */
 .half{
 	width:100%;
 	padding:0;
