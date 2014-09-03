@@ -218,13 +218,13 @@ footer[role="contentinfo"]{
 	background:#fff;
 	z-index:10;
 	.spinner {
-		width: 60px;
-		height: 60px;
-		background-color: #333;
-		margin: 0 auto;
+		width:60px;
+		height:60px;
+		background-color:#333;
+		margin:0 auto;
 		top:40%;
 		position:relative;
-		animation: rotateplane 1.2s infinite ease-in-out;
+		animation:rotateplane 1.2s infinite ease-in-out;
 	}
 }
 /* ------------------------------- *\
@@ -266,26 +266,26 @@ footer[role="contentinfo"]{
 @media print {
 	// fix common problems with printing
 	* {
-		background: transparent !important;
-		color: #000 !important;
-		box-shadow: none !important;
-		text-shadow: none !important;
+		background:transparent !important;
+		color:#000 !important;
+		box-shadow:none !important;
+		text-shadow:none !important;
 	}
 	thead {
-		display: table-header-group;
+		display:table-header-group;
 	}
 	tr,img {
 		page-break-inside: avoid;
 	}
 	img {
-		max-width: 100% !important;
+		max-width:100% !important;
 	}
 	p,h2,h3 {
 		orphans:3;
 		widows:3;
 	}
 	h2,h3{
-		page-break-after: avoid;
+		page-break-after:avoid;
 	}
 	.dontprint{
 		display:none;
