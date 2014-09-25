@@ -57,13 +57,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		styleguide: {
-			dist: {
-				files: {
-					'./docs/': 'css/global.css'
-				}
-			}
-		},
 		spell: {
 			files: ['index.html', 'index.php']
 		},
@@ -95,7 +88,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-spell');
-	// grunt.loadNpmTasks('grunt-styleguide');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin', 'spell', 'watch']);
