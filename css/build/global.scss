@@ -76,11 +76,6 @@ textarea,input,select{
 .group:after{clear:both;}
 .group{*zoom:1;}
 .center{text-align:center;}
-.vcenter{
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-}
 .big{font-size:150%;}
 small{font-size:80%;}
 .pointer{cursor:pointer;}
@@ -106,9 +101,9 @@ textarea,input:not([type=button]):not([type=submit]):not([type=radio]):not([type
 	border:1px solid rgba(0,0,0,0.3);
 	padding:0.5em;
 	width:100%;
-	transition:border-color 0.3s;
+	transition:border-color 0.2s;
 	&:focus{
-		transition:border-color 0.3s;
+		transition:border-color 0.2s;
 		border-color:$blue;
 	}
 }
@@ -122,11 +117,11 @@ input[type=button],input[type=submit]{
 	cursor:pointer;
 	width:100%;
 	color:#fff;
-	transition: border-color 0.3s, background 0.3s;
+	transition: border-color 0.2s, background 0.2s;
 	&:focus{
 		background:$blue;
 		border-color:$blue;
-		transition: border-color 0.3s, background 0.3s;
+		transition: border-color 0.2s, background 0.2s;
 	}
 }
 
@@ -163,15 +158,10 @@ header[role="banner"]{
 	padding:1em 0;
 }
 /* Page-Nav ---------- */
-nav[role="navigation"]{
-}
+nav[role="navigation"]{}
 /* Page-Main ----------- */
-main[role="main"]{
-
-}
-section{
-	position:relative;
-}
+main[role="main"]{}
+section{position:relative;}
 article {
 	h1{
 		font-size:2.5em;
@@ -253,9 +243,9 @@ footer[role="contentinfo"]{
 @media print {
 	* {
 		background:transparent !important;
-		color:#000 !important;
-		box-shadow:none !important;
 		text-shadow:none !important;
+		box-shadow:none !important;
+		color:#000 !important;
 	}
 	thead {
 		display:table-header-group;
