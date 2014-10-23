@@ -76,6 +76,7 @@ textarea,input,select{
 .group:after{clear:both;}
 .group{*zoom:1;}
 .center{text-align:center;}
+.rel{position:relative;}
 .big{font-size:150%;}
 small{font-size:80%;}
 .pointer{cursor:pointer;}
@@ -158,22 +159,10 @@ header[role="banner"]{
 	padding:1em 0;
 }
 /* Page-Nav ---------- */
-nav[role="navigation"]{}
-/* Page-Main ----------- */
-main[role="main"]{}
-section{position:relative;}
-article {
-	h1{
-		font-size:2.5em;
-		margin-bottom:0.25em;
-		color:#222;
-	}
-	p{
-		line-height:1.7;
-		font-size:1.2em;
-		margin-bottom:1em;
-	}
+nav[role="navigation"]{
+
 }
+/* Page-Main ----------- */
 
 /* Page-Footer ----------- */
 footer[role="contentinfo"]{
