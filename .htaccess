@@ -3,12 +3,14 @@
 # ------------------------------------------------------------------------------
 # Options +FollowSymLinks -MultiViews
 # RewriteEngine On
-# RewriteBase /
+# RewriteBase /localhost-folder
+
+############# DO NOT FORGET TO CHANGE REWRITEBASE BEFORE UPLOADING #############
 
 # ------------------------------------------------------------------------------
 ## 404 ERROR                                                                  |
 # ------------------------------------------------------------------------------
-# ErrorDocument 404 /404
+# ErrorDocument 404 /localhost-folder/404
 
 # ------------------------------------------------------------------------------
 ## URL REWRITES                                                               |
