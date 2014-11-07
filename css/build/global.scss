@@ -110,7 +110,7 @@ input[type=button],input[type=submit]{
 	background:$orange;
 	line-height:normal;
 	text-align:center;
-	padding:0.5em 2em;
+	padding:0.5em;
 	cursor:pointer;
 	width:100%;
 	color:#fff;
@@ -245,5 +245,5 @@ footer[role="contentinfo"]{
 		widows:3;
 	}
 	h2,h3{page-break-after:avoid;}
-	.dontprint{display:none;}
+	.dontprint,header{display:none;}
 }
