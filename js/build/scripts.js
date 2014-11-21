@@ -10,5 +10,5 @@ var b 	 = $('body'),
 $(window).load(function () {
 	$('.load').fadeOut();
 	$('.wrap').removeClass('preload');
-	$('.full-page .wrapper').height(winH);
+	$('.block .wrapper').height(winH);
 });

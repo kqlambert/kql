@@ -158,10 +158,13 @@ header[role="banner"]{
 
 /* Page-Nav ---------- */
 nav[role="navigation"]{
-
+	position:fixed;
 }
 
 /* Page-Main ----------- */
+.block{
+	position:relative;
+}
 
 /* Page-Footer ----------- */
 footer[role="contentinfo"]{
