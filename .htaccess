@@ -26,7 +26,7 @@
 # RewriteCond %{REQUEST_FILENAME}.html -f
 # RewriteRule ^(.+)$ $1.html [L,QSA]
 
-## redirect: blog.html?title=something -> article/something
+## rewrite: blog.html?title=something -> article/something
 # RewriteRule ^article/([a-zA-Z0-9-]+)/?$ blog?title=$1 [L,QSA]
 
 # ------------------------------------------------------------------------------
