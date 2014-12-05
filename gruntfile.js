@@ -19,16 +19,6 @@ module.exports = function (grunt) {
 				dest: 'js/scripts.min.js'
 			}
 		},
-		imagemin: {
-			dynamic: {
-				files: [{
-					expand: true,
-					cwd: 'i/build/',
-					src: ['**/*.{png,jpg,gif}'],
-					dest: 'i/'
-				}]
-			}
-		},
 		sass: {
 			dist: {
 				options: {
@@ -57,9 +47,6 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		spell: {
-			files: ['index.html', 'index.php']
-		},
 		watch: {
 			options: {
 				livereload: true
@@ -83,12 +70,10 @@ module.exports = function (grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-spell');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'sass', 'autoprefixer', 'cssmin', 'spell', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'cssmin', 'watch']);
 };
