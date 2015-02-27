@@ -6,9 +6,9 @@
 /*node browser: true*/
 'use strict';
 var b 	 = $('body'),
-	winH = $(window).height();
+	winH = $(window).height() - 250;
 $(window).load(function () {
 	$('.load').fadeOut();
 	$('.wrap').removeClass('preload');
-	$('.block .wrapper').height(winH);
+	$('.hero .wrapper').height(winH);
 });

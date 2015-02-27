@@ -4,12 +4,13 @@
 // colors
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
+$green:rgb(134,183,31);
 
 /* ------------------------------- *\
 	#Fonts
 \* ------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
-$font-stack:'Source Sans Pro','sans-serif';
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+$font-stack:'Raleway','sans-serif';
 
 /* ------------------------------- *\
 	#Generic/ CSS Reset/ Normalize
@@ -153,17 +154,19 @@ $footer-height:3.25em;
 \* ------------------------------- */
 /* Page-Header ----------- */
 header[role="banner"]{
-	padding:1em 0;
+	// padding:1em 0;
 }
 
 /* Page-Nav ---------- */
 nav[role="navigation"]{
-	position:fixed;
+	// position:fixed;
 }
 
 /* Page-Main ----------- */
-.block{
+.hero{
 	position:relative;
+	// background: url(../i/hero-image.jpg) no-repeat center center fixed;
+	// background-size: cover;
 }
 
 /* Page-Footer ----------- */
