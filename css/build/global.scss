@@ -67,11 +67,6 @@ textarea,input,select{
 	*vertical-align:middle;
 	font-family:$font-stack;
 }
-.left{float:left;}
-.right{float:right;}
-.group:before,.group:after{content:" ";display:table;}
-.group:after{clear:both;}
-.group{*zoom:1;}
 .center{text-align:center;}
 .rel{position:relative;}
 .big{font-size:150%;}
@@ -121,6 +116,24 @@ input[type=button],input[type=submit]{
 		border-color:$blue;
 		transition:border-color 0.2s, background 0.2s;
 	}
+}
+/* ------------------------------- *\
+	#Element Layout
+\* ------------------------------- */
+.left{float:left;}
+.right{float:right;}
+.group:before,.group:after{content:" ";display:table;}
+.group:after{clear:both;}
+.group{*zoom:1;} // old float
+// new hotness flexbox
+.flex-container{
+	display:flex; // general
+	/* --- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ --- */
+	/* flex-direction:row; // makes div.flex go from left to row
+	flex-wrap:wrap; // allows multi lines
+	justify-content:flex-start; // start divs at top left
+	align-items:flex-start; // start divs at top of element
+	align-content:flex-start; // start divs at left of element */
 }
 
 /* ------------------------------- *\
