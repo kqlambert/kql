@@ -5,6 +5,7 @@
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
 $green:rgb(134,183,31);
+$grey:#f0f0f0;
 
 /* ------------------------------- *\
 	#Fonts
@@ -124,17 +125,7 @@ input[type=button],input[type=submit]{
 .right{float:right;}
 .group:before,.group:after{content:" ";display:table;}
 .group:after{clear:both;}
-.group{*zoom:1;} // old float
-// new hotness flexbox
-.flex-container{
-	display:flex; // general
-	/* --- https://css-tricks.com/snippets/css/a-guide-to-flexbox/ --- */
-	/* flex-direction:row; // makes div.flex go from left to row
-	flex-wrap:wrap; // allows multi lines
-	justify-content:flex-start; // start divs at top left
-	align-items:flex-start; // start divs at top of element
-	align-content:flex-start; // start divs at left of element */
-}
+.group{*zoom:1;}
 
 /* ------------------------------- *\
 	#Objects
@@ -212,13 +203,9 @@ footer[role="contentinfo"]{
 	}
 }
 @keyframes rotateplane{
-	0%{
-		transform:perspective(120px) rotateX(0deg) rotateY(0deg);
-	}50%{
-		transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-	}100%{
-		transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-	}
+	0%{transform:perspective(120px) rotateX(0deg) rotateY(0deg);}
+	50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);}
+	100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}
 }
 
 /* ------------------------------- *\
@@ -243,9 +230,7 @@ footer[role="contentinfo"]{
 
 // desktop
 @media only screen and (min-width:67em){
-	ul{
-		&.group li{float:left;}
-	}
+	ul{&.group li{float:left;}}
 }
 
 // print
