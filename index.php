@@ -2,10 +2,17 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<meta name="theme-color" content="#dfdfdf">
-		<link rel="stylesheet" href="./css/global.css">
+		<!-- <meta name="description" content="Title of content"> -->
+		<!-- <meta name="author" content="//author.com"> -->
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+		<!-- <meta itemprop="name" content="short title of content"> -->
+		<!-- <meta itemprop="image" content="./i/head/content-specific-image.jpg"> -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta id="theme-color" name="theme-color" content="#fff">
+		<!-- <meta name="application-name" content="short title of content"> -->
 		<title>New Page</title>
+		<!-- <link rel="shortcut icon" href="./i/icon_192x192.png"> -->
+		<link rel="stylesheet" href="./css/global.css">
 	</head>
 	<body>
 		<div class="load">
