@@ -10,7 +10,7 @@ $grey:#f0f0f0;
 /* ------------------------------- *\
 	#Fonts
 \* ------------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url('fonts/Roboto-Regular.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url('fonts/Roboto-Light.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url('fonts/Roboto-Medium.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url('fonts/Roboto-Bold.ttf') format('truetype');}
 $font-stack:'Roboto','sans-serif';
 
 /* ------------------------------- *\
@@ -44,7 +44,7 @@ table{
 td,th{padding:0;}
 svg:not(:root){
 	overflow:hidden;
-	stroke:#000;
+	stroke-width:0;
 }
 a{
 	background:0 0;
@@ -158,7 +158,7 @@ $footer-height:3.25em;
 \* ------------------------------- */
 /* Page-Header ----------- */
 header[role="banner"]{
-	// padding:1em 0;
+	padding:1em 0;
 }
 
 /* Page-Nav ---------- */
@@ -168,9 +168,6 @@ nav[role="navigation"]{
 
 /* Page-Main ----------- */
 .hero{
-	position:relative;
-	// background: url(../i/hero-image.jpg) no-repeat center center fixed;
-	// background-size: cover;
 }
 
 /* Page-Footer ----------- */
@@ -180,8 +177,31 @@ footer[role="contentinfo"]{
 }
 
 /* ------------------------------- *\
-	#Animations
+	#Loading/Ripples
 \* ------------------------------- */
+.c-ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+.c-ripple__circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(255,255,255,0.25);
+	.c-ripple.is-active & {
+		animation: a-ripple .4s ease-in;
+	}
+}
 .load{
 	position:fixed;
 	top:0;
@@ -191,7 +211,7 @@ footer[role="contentinfo"]{
 	width:100%;
 	height:100%;
 	background:#fff;
-	z-index:10;
+	z-index:100;
 	.spinner{
 		width:60px;
 		height:60px;
@@ -215,7 +235,6 @@ footer[role="contentinfo"]{
 	width:100%;
 	padding:0;
 }
-
 // tablet
 @media only screen and (min-width:48em){
 	.half{
@@ -227,12 +246,10 @@ footer[role="contentinfo"]{
 		}
 	}
 }
-
 // desktop
 @media only screen and (min-width:67em){
 	ul{&.group li{float:left;}}
 }
-
 // print
 @media print{
 	*{
