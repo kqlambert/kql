@@ -1,6 +1,7 @@
 /* ------------------------------- *\
 	#Variables
 \* ------------------------------- */
+$footer-height:3.25em;
 // colors
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
@@ -140,7 +141,6 @@ input[type=button],input[type=submit]{
 	#Objects
 \* ------------------------------- */
 /* Wrappers ----------- */
-$footer-height:3.25em;
 .wrap{
 	min-height:100%;
 	margin-bottom:-($footer-height);
