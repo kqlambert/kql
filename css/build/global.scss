@@ -2,7 +2,6 @@
 	#Variables
 \* ------------------------------- */
 $footer-height:3.25em;
-// colors
 $orange:rgb(239,65,53);
 $blue:rgb(0,135,195);
 $green:rgb(134,183,31);
@@ -11,7 +10,11 @@ $grey:#f0f0f0;
 /* ------------------------------- *\
 	#Fonts
 \* ------------------------------- */
-@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url('fonts/Roboto-Regular.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url('fonts/Roboto-Light.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url('fonts/Roboto-Medium.ttf') format('truetype');}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url('fonts/Roboto-Bold.ttf') format('truetype');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:100;src:url('fonts/Roboto-Thin.ttf') format('truetype');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:300;src:url('fonts/Roboto-Light.ttf') format('truetype');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:url('fonts/Roboto-Regular.ttf') format('truetype');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:500;src:url('fonts/Roboto-Medium.ttf') format('truetype');}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:url('fonts/Roboto-Bold.ttf') format('truetype');}
 $font-stack:'Roboto','sans-serif';
 
 /* ------------------------------- *\
@@ -182,15 +185,15 @@ header[role="banner"]{
 nav[role="navigation"]{
 	li a {
 		display:block;
-		transition:color 0.3s;
 		&:hover,&:focus,&.active{
-			transition:color 0.3s;
 		}
 	}
 }
 
 /* Page-Main ----------- */
+section{
 
+}
 
 /* Page-Footer ----------- */
 footer[role="contentinfo"]{
