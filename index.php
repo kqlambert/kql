@@ -5,7 +5,6 @@
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta id="theme-color" name="theme-color" content="#fff">
-		<title>New Page</title>
 		<style>
 			.load{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:#fff;z-index:10;}.load .spinner{width:60px;height:60px;background-color:#333;margin:0 auto;top:40%;position:relative;animation:rotateplane 1.2s infinite ease-in-out;}@keyframes rotateplane{0%{transform:perspective(120px) rotateX(0deg) rotateY(0deg);}50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);}100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}}
 		</style>
@@ -14,6 +13,7 @@
 			loadCSS("./css/global.css");
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
+		<title>New Page</title>
 	</head>
 	<body>
 		<div class="load">
