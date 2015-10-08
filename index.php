@@ -13,7 +13,9 @@
 			loadCSS("./css/global.css");
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
-		<title>New Page</title>
+		<title>TEMP</title>
+		<meta name="description" content="TEMP">
+		<link rel="shortcut icon" href="./i/icon.png">
 	</head>
 	<body>
 		<div class="load">
