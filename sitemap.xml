@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
 	<url>
-		<loc>http://example-site.com/</loc>
+		<loc>http://examplesite.com/</loc>
 		<lastmod>YYYY-MM-DD</lastmod>
 		<changefreq>changefreq(weekly,monthly,daily)</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://example-site.com/page</loc>
+		<loc>http://examplesite.com/page</loc>
 		<lastmod>YYYY-MM-DD</lastmod>
 		<changefreq>changefreq(weekly,monthly,daily)</changefreq>
 		<priority>0.8</priority>

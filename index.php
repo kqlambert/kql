@@ -14,8 +14,8 @@
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
 		<link rel="shortcut icon" href="./i/icon.png">
-		<title>TEMP</title>
-		<meta name="description" content="TEMP">
+		<title>NEW PAGE</title>
+		<meta name="description" content="Description of new page">
 	</head>
 	<body>
 		<div class="load">
