@@ -1,3 +1,6 @@
-# Start Point Boilerplate #
+# Style Guides
 
-Uses sass, grunt, .htaccess and jquery 2.1.0. Node.js, Ruby and SASS should all be installed.
+## Colors
+black: 232C35
+red: ED1C24
+grey: 4D565E
