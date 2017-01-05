@@ -24,13 +24,24 @@
 		<div class="wrap preload">
 			<header role="banner">
 				<div class="wrapper">
-
+					<div class="clear">
+						<div class="logo left">
+							<a href="/">KQL</a>
+						</div>
+						<nav class="right">
+							<ul class="clear">
+								<li class="menu-btn"><a href="#"></a></li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</header>
 			<main role="main">
 				<section>
-					<div class="wrapper">
+					<div class="landing">
+						<div class="wrapper">
 
+						</div>
 					</div>
 				</section>
 			</main>
