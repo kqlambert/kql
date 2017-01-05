@@ -39,8 +39,15 @@
 			<main role="main">
 				<section>
 					<div class="landing">
-						<div class="wrapper">
-
+						<div class="landing__wrapper">
+							<h1>Keegan Lambert</h1>
+							<h2>Front-End Web Developer Living and Working on the West Coast.</h2>
+							<div class="back">
+							    <div class="button_base b05_3d_roll">
+							        <div>View work</div>
+							        <div>View work</div>
+							    </div>
+							</div>
 						</div>
 					</div>
 				</section>
