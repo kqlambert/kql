@@ -24,16 +24,22 @@
 		<div class="wrap preload">
 			<header role="banner">
 				<div class="wrapper">
-					<div class="clear">
+					<div class="group">
 						<div class="logo left">
 							<a href="/">KQL</a>
 						</div>
-						<nav class="right">
-							<ul class="clear">
-								<li class="menu-btn"><a href="#"></a></li>
-							</ul>
-						</nav>
+						<div class="right menu-btn"><a href="#"></a></div>
 					</div>
+					<nav role="navigation">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Work</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Resume</a></li>
+							<li><a href="#">Hire me</a></li>
+						</ul>
+						<a href="#" class="close-nav">x</a>
+					</nav>
 				</div>
 			</header>
 			<main role="main">
@@ -42,12 +48,6 @@
 						<div class="landing__wrapper">
 							<h1>Keegan Lambert</h1>
 							<h2>Front-End Web Developer Living and Working on the West Coast.</h2>
-							<div class="back">
-							    <div class="button_base b05_3d_roll">
-							        <div>View work</div>
-							        <div>View work</div>
-							    </div>
-							</div>
 						</div>
 					</div>
 				</section>
