@@ -59,7 +59,7 @@ b,strong{font-weight:700;}
 html,body{
 	height:100%;
 	color:#444;
-	background:$black;
+	background:#fff;
 	font-family:$font-stack;
 }
 body{overflow-x:hidden;}
@@ -288,6 +288,7 @@ section{
 	top:0;
 	width:100%;
 	left:0;
+	background:$black;
 	.landing__wrapper{
 		position:absolute;
 		top:50%;
@@ -304,6 +305,39 @@ section{
 		text-align:center;
 		font-weight:300;
 		margin-top:1rem;
+	}
+}
+.content-wrapper{
+	margin-top:6rem;
+	h1{
+		font-weight:400;
+		font-size:2rem;
+		color:$black;
+	}
+}
+.project{
+	color:#777;
+	font-weight:300;
+	h2{
+		margin-bottom:1rem;
+		display:inline;
+		border-bottom:1px solid $red;
+		padding-bottom:0.25rem;
+	}
+	p{
+		margin-top:1rem;
+		line-height:1.8rem;
+		font-size:1.2rem;
+	}
+	margin-top:3rem;
+}
+.project-image {
+	padding:4rem;
+	background:$grey;
+	text-align:center;
+	margin-top:2rem;
+	&.porject-pk{
+		background:#2BA9E1;
 	}
 }
 

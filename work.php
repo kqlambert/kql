@@ -14,7 +14,7 @@
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
 		<link rel="shortcut icon" href="./i/icon.png">
-		<title>Personal Portfolio of Keegan Lambert</title>
+		<title>Work and personal Projects of Keegan Lambert</title>
 		<meta name="description" content="Description of new page">
 	</head>
 	<body>
@@ -25,10 +25,21 @@
 			<?php require_once('inc/header.php'); ?>
 			<main role="main">
 				<section>
-					<div class="landing">
-						<div class="landing__wrapper">
-							<h1>Keegan Lambert</h1>
-							<h2>Front-End Web Developer Living and Working on the West Coast.</h2>
+					<div class="content-wrapper">
+						<div class="wrapper">
+							<h1>My Work / Projects</h1>
+							<div class="project">
+								<h2><a target="_blank" href="http://pokemove.com">Pokemove.com</a></h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="project-image porject-pk">
+									<image width="100%" src="i/pokemove.jpg" alt="pokemove.com">
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
