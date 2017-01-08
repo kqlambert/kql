@@ -336,8 +336,19 @@ section{
 	background:$grey;
 	text-align:center;
 	margin-top:2rem;
-	&.porject-pk{
+	&.project-pk{
 		background:#2BA9E1;
+	}
+}
+.hire{
+	h2 {
+		color:$black;
+		font-size:2rem;
+		font-weight:300;
+		margin-bottom:1rem;
+		span {
+			color:$red;
+		}
 	}
 }
 

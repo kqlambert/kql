@@ -14,7 +14,7 @@
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
 		<link rel="shortcut icon" href="./i/icon.png">
-		<title>Work and personal Projects of Keegan Lambert</title>
+		<title>Personal Portfolio of Keegan Lambert</title>
 		<meta name="description" content="Description of new page">
 	</head>
 	<body>
@@ -27,21 +27,9 @@
 				<section>
 					<div class="content-wrapper">
 						<div class="wrapper">
-							<h1>My Work / Projects</h1>
-							<div class="project">
-								<h2><a target="_blank" href="http://pokemove.com">Pokemove.com</a></h2>
-								<p></p>
-								<div class="project-image project-pk">
-									<image width="100%" src="i/pokemove.jpg" alt="pokemove.com">
-								</div>
-							</div>
-							<div class="project">
-								<h2><a target="_blank" href="http://ezfundinggroup.com">EZFundingGroup.com</a></h2>
-								<p></p>
-								<div class="project-image">
-									<image width="100%" src="i/ezfunding.jpg" alt="ezfundinggroup.com">
-								</div>
-							</div>
+							<form class="hire">
+								<h2>Hire me<span>?</span></h2>
+							</form>
 						</div>
 					</div>
 				</section>

@@ -12,7 +12,7 @@
 				<li><a href="work.php">Work</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Resume</a></li>
-				<li><a href="#">Hire me</a></li>
+				<li><a href="hire.php">Hire me</a></li>
 			</ul>
 			<a href="#" class="close-nav">x</a>
 		</nav>
