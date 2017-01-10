@@ -365,6 +365,15 @@ section{
 		}
 	}
 }
+.about {
+	p {
+		margin-top:1rem;
+		font-size:1.2rem;
+		color:#555;
+		font-weight:300;
+		line-height:1.6;
+	}
+}
 
 /* Page-Footer ----------- */
 footer[role="contentinfo"]{
