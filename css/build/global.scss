@@ -1,7 +1,7 @@
 /* ------------------------------- *\
 	#Variables
 \* ------------------------------- */
-$footer-height:3.25em;
+$footer-height:4em;
 $black: #232c35;
 $grey: #4d565e;
 $red: #ed1c24;
@@ -307,6 +307,20 @@ section{
 		margin-top:1rem;
 	}
 }
+.view-work{
+	display:block;
+	color:#fff;
+	border:2px solid #fff;
+	margin:2rem auto;
+	max-width:15rem;
+	text-align:center;
+	padding:1rem 2rem;
+	&:hover,&:focus{
+		border-color:$red;
+		color:$red;
+		transition:all 0.2s;
+	}
+}
 .content-wrapper{
 	margin-top:6rem;
 	h1{
@@ -356,6 +370,9 @@ section{
 footer[role="contentinfo"]{
 	height:$footer-height;
 	padding:1em 0;
+	li {
+		margin-right:2em;
+	}
 }
 
 /* ------------------------------- *\

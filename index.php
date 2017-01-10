@@ -13,9 +13,9 @@
 			loadCSS("./css/global.css");
 		</script>
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
-		<link rel="shortcut icon" href="./i/icon.png">
+		<link rel="shortcut icon" href="i/icon.png">
 		<title>Personal Portfolio of Keegan Lambert</title>
-		<meta name="description" content="Description of new page">
+		<meta name="description" content="Front-end web developer living and working on the west coast. HTML, CSS, PHP, SQL, VBSCRIPT, JAVASCRIPT, JQUERY, AJAX, XML, PHOTOSHOP">
 	</head>
 	<body>
 		<div class="load">
@@ -29,16 +29,13 @@
 						<div class="landing__wrapper">
 							<h1>Keegan Lambert</h1>
 							<h2>Front-End Web Developer Living and Working on the West Coast.</h2>
+							<a href="work.php" class="view-work">View My Work</a>
 						</div>
 					</div>
 				</section>
 			</main>
 		</div>
-		<footer role="contentinfo">
-			<div class="wrapper">
-
-			</div>
-		</footer>
+		<?php require_once('inc/footer.php'); ?>
 		<script async src="./js/scripts.min.js"></script>
 	</body>
 </html>

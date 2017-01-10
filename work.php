@@ -15,7 +15,7 @@
 		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
 		<link rel="shortcut icon" href="./i/icon.png">
 		<title>Work and personal Projects of Keegan Lambert</title>
-		<meta name="description" content="Description of new page">
+		<meta name="description" content="Personal work of Keegan Lambert">
 	</head>
 	<body>
 		<div class="load">
@@ -30,14 +30,14 @@
 							<h1>My Work / Projects</h1>
 							<div class="project">
 								<h2><a target="_blank" href="http://pokemove.com">Pokemove.com</a></h2>
-								<p></p>
+								<p>Created from scratch, front and back end, brand and blogging platform.</p>
 								<div class="project-image project-pk">
 									<image width="100%" src="i/pokemove.jpg" alt="pokemove.com">
 								</div>
 							</div>
 							<div class="project">
 								<h2><a target="_blank" href="http://ezfundinggroup.com">EZFundingGroup.com</a></h2>
-								<p></p>
+								<p>Created from scratch, front and back end, brand and login backend (generates pdfs and helps clients track progress) plus contact form.</p>
 								<div class="project-image">
 									<image width="100%" src="i/ezfunding.jpg" alt="ezfundinggroup.com">
 								</div>
@@ -47,11 +47,7 @@
 				</section>
 			</main>
 		</div>
-		<footer role="contentinfo">
-			<div class="wrapper">
-
-			</div>
-		</footer>
+		<?php require_once('inc/footer.php'); ?>
 		<script async src="./js/scripts.min.js"></script>
 	</body>
 </html>
