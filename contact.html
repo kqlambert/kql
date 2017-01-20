@@ -1,0 +1,47 @@
+<div class="header-bump">&nbsp;</div>
+<div class="min-hero change-color">
+	<div class="wrapper">
+		<h1>Drop me a line</h1>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="padd group">
+		<div class="left half">
+			<form name="userForm" class="contact" ng-submit="submitForm()">
+				<div class="fieldset">
+					<label>Name</label>
+					<input type="text" name="name" ng-model="user.name">
+					<span ng-show="errorName">{{errorName}}</span>
+				</div>
+				<div class="fieldset">
+					<label>Email</label>
+					<input type="email" name="email" ng-model="user.email">
+					<span ng-show="errorEmail">{{errorEmail}}</span>
+				</div>
+				<div class="fieldset">
+					<label>Telephone</label>
+					<input type="tel" name="tel" ng-model="user.tel">
+				</div>
+				<div class="fieldset">
+					<label>Message</label>
+					<textarea name="body" rows="4" ng-model="user.body"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+		<div class="right half">
+			<p>PREVIEW:</p>
+			<div class="preview">
+				<p>Hi Keegan!</p>
+				<p>Reply to: <span ng-bind="user.email">ttutone@siteinneed.com</span></p>
+				<p>Call: <span ng-bind="user.tel">928.867.5309</span></p>
+				<p><span ng-bind="user.body">Jenny, Jenny who can I turn to
+You give me something I can hold on to
+I know you think I'm like the others before
+Who saw your name and number on the wall...</span></p>
+				<p>Sincerely,</p>
+				<p><span ng-bind="user.name">Tommy Tutone</span></p>
+			</div>
+		</div>
+	</div>
+</div>

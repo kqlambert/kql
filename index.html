@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="appname" ng-controller="appCtrl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta id="theme-color" name="theme-color" content="#fff">
+		<style>
+			.load{position:fixed;top:0;left:0;right:0;bottom:0;width:100%;height:100%;background:#fff;z-index:10;}.load .spinner{width:60px;height:60px;background-color:#333;margin:0 auto;top:40%;position:relative;animation:rotateplane 1.2s infinite ease-in-out;}@keyframes rotateplane{0%{transform:perspective(120px) rotateX(0deg) rotateY(0deg);}50%{transform:perspective(120px) rotateX(-180.1deg) rotateY(0deg);}100%{transform:perspective(120px) rotateX(-180deg) rotateY(-179.9deg);}}
+		</style>
+		<script>
+			function loadCSS(e,n,o,t){"use strict";var d=window.document.createElement("link"),i=n||window.document.getElementsByTagName("script")[0],r=window.document.styleSheets;return d.rel="stylesheet",d.href=e,d.media="only x",t&&(d.onload=t),i.parentNode.insertBefore(d,i),d.onloadcssdefined=function(e){for(var n,o=0;o<r.length;o++)r[o].href&&r[o].href===d.href&&(n=!0);n?e():setTimeout(function(){d.onloadcssdefined(e)})},d.onloadcssdefined(function(){d.media=o||"all"}),d}
+			loadCSS("./css/global.css");
+		</script>
+		<noscript><link rel="stylesheet" href="./css/global.css"></noscript>
+		<link rel="shortcut icon" href="./i/icon.png">
+		<title>{{title}}</title>
+		<meta name="description" content="{{description}}">
+	</head>
+	<body ng-controller="postCtrl">
+		<div class="load">
+			<div class="spinner"></div>
+		</div>
+		<div class="wrap preload">
+			<header role="banner">
+				<div class="wrapper wrapper__large">
+					<div class="group">
+						<a class="logo left half" href="./#!/"><b>KEEGAN</b>LAMBERT</a>
+						<nav role="navigation" class="right half group">
+							<ul class="group right">
+								<li><a href="https://github.com/kqlambert" class="icon-github" target="_blank"></a></li>
+								<li><a href="http://codepen.io/kqlambert/" class="icon-codepen" target="_blank"></a></li>
+								<li><a href="http://stackoverflow.com/users/714254/kqlambert" class="icon-stack" target="_blank"></a></li>
+								<li><a href="#" class="icon-menu open-menu"></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<div class="menu">
+				<ul>
+					<li><a href="./#!/">home</a></li>
+					<li><a href="./#!/portfolio">portfolio</a></li>
+					<li><a href="./#!/about">about</a></li>
+					<li><a href="./#!/contact">contact</a></li>
+				</ul>
+			</div>
+			<main role="main">
+				<section>
+					<ng-view></ng-view> 
+				</section>
+			</main>
+		</div>
+		<footer role="contentinfo">
+			<div class="wrapper">
+
+			</div>
+		</footer>
+		<script src="./node_modules/angular/angular.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+		<script src="./js/scripts.min.js"></script>
+		<script>
+			var appname = angular.module('appname', ['ngRoute']);
+			appname.config(['$routeProvider',
+				function($routeProvider) {
+					$routeProvider.
+						when('/', {
+							templateUrl: 'home.html',
+							controller: 'appCtrl'
+						}).
+						when('/portfolio', {
+							templateUrl: 'portfolio.html',
+							controller: 'pCtrl'
+						}).
+						when('/about', {
+							templateUrl: 'about.html',
+							controller: 'aCtrl'
+						}).
+						when('/contact', {
+							templateUrl: 'contact.html',
+							controller: 'cCtrl'
+						}).
+						otherwise({
+							redirectTo: '/'
+						})
+				}])
+			appname.controller('postCtrl', function ($scope, $http) {
+				$scope.user = {};
+				$scope.submitForm = function() {
+			        $http({
+			          method  : 'POST',
+			          url     : 'send.php',
+			          data    : $scope.user,
+			          headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+			         })
+			          .success(function(data) {
+			            if (data.errors) {
+			              $scope.errorName = data.errors.name;
+			              $scope.errorBody = data.errors.body;
+			              $scope.errorEmail = data.errors.email;
+			            } else {
+			              $scope.block = data.block;
+			              console.log($scope.block);
+			            }
+			          });
+			        };
+			});
+			appname.controller('appCtrl', function($scope) {
+				$scope.title = "Keegan Lambert > Full Stack Developer";
+				$scope.description = "Full stack web developer living and working on the west coast.";
+			});
+			appname.controller('pCtrl', function($scope) {
+				$scope.title = "Portfolio > Keegan Lambert";
+				$scope.description = "Personal and professional work in web development and design.";
+			});
+			appname.controller('aCtrl', function($scope) {
+				$scope.title = "About me > Keegan Lambert";
+				$scope.description = "Living and looking for work in the San Diego Area";
+			});
+			appname.controller('cCtrl', function($scope) {
+				$scope.title = "Contact > Keegan Lambert";
+				$scope.description = "Drop me a line";
+			});
+		</script>
+	</body>
+</html>
